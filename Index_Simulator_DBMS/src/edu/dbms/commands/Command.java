@@ -2,7 +2,6 @@ package edu.dbms.commands;
 
 import java.io.IOException;
 
-// Push by Parin
 public class Command {
 
 	private String commandName;
