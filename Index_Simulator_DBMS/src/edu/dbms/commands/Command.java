@@ -1,7 +1,7 @@
 package edu.dbms.commands;
 
 import java.io.IOException;
-// Hello 
+
 public class Command {
 
 	private String commandName;
