@@ -22,7 +22,7 @@ public class Command {
 				if(args.length==3){
 					CreateIndex command=new CreateIndex();
 					command.setIndexName(args[1]);
-					command.setIndexOrders(args[2]);
+					command.setIndexOrders(args[2].substring(1,args[2].length()-1));
 					command.execute();
 				}
 				else{
