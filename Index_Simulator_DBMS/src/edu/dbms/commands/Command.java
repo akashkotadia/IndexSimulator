@@ -30,8 +30,9 @@ public class Command {
 				}
 			}
 			else if(commandName.toLowerCase().equals("l")){
-				if(args.length==1){
-					ListAllIndex command=new ListAllIndex();
+				if(args.length==2){
+					ListIndex command=new ListIndex();
+					command.setTableName(args[1]);
 					command.execute();
 				}
 				else{

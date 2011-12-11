@@ -81,6 +81,19 @@ public class MainIndex {
 			System.out.println();
 		}
 	}
+	
+	public void printIndexByTableName(String tableName){
+		for(String key:mainIndexTable.keySet()){
+			if(key.substring(0,2).equals(tableName)){
+				System.out.print(key+" ");
+				for(String s:mainIndexTable.get(key)){
+					System.out.print(s+" ");
+				}
+				System.out.println();
+			}
+		}
+	}
+	
 	public void dumpToFile() throws IOException{
 		  FileWriter fstream = new FileWriter(Constants.INDEX_DIRECTORY+"mainIndex.idx");
 		  BufferedWriter out = new BufferedWriter(fstream);
